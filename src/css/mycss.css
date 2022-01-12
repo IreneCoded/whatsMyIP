@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+
+h1{
+    font-family: 'Praise', cursive;
+    display: inline;
+    color:#c9fdf2;
+    font-size: 6em;
+    font-weight: lighter;
+    text-align: left !important;
+    margin-top: 80px;
+    position:absolute;
+    left: 8vw;
+    transform: rotate(-15deg);
+
+}
+
+h2{
+    font-family: 'Praise', cursive;
+    
+    color:#1b6168;
+    font-size: 6em;
+    font-weight: lighter;
+    text-align: center !important;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    
+
+}
+
+#mappi{
+    width: 100vw;
+    height: 200px;
+    background-color: deeppink;
+
+}
+
+.leaflet-container {
+    height: 380px;
+    width: 380px;
+    outline: 5px dashed #043b41;
+    outline-offset: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%
+  }
+
+  .firstIP{
+    position:absolute;
+    background-color: #47bfca;
+    width: 15vh;
+    height: 15vh;
+    padding: 20px;
+    display: flex;
+    border-radius: 50% ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    left:28vw;
+    top: 25vh;
+    z-index: -300;
+    outline: 5px dashed #c9fdf2;
+    outline-offset: -10px;
+
+    transform: rotate(-15deg);
+
+  }
+ 
+#details{
+    position:absolute;
+    background-color: #47bfca;
+    width: 30vh;
+    height: 30vh;
+    padding: 20px;
+    display: flex;
+    border-radius: 50% ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    left:62vw;
+    top: 50vh;
+    z-index: -300;
+    outline: 5px dashed #c9fdf2;
+    transition: all 1.5s ease-in-out;
+    outline-offset: -10px;
+    transform: rotate(-15deg);
+
+}
+#details:hover, .clocksize:hover, .react-clock:hover .firstIP:hover{
+    
+    transition: all 0.8s ease-in-out;
+    opacity: 1;
+    z-index: 3000;
+
+}
+
+#details:hover,  .firstIP:hover{
+    
+    transition: all 0.8s ease-in-out;
+   
+    z-index: 3500;
+    transform: rotate(0deg);
+      transform: scale(1.4);
+  }
+
+
+ #flag{
+    
+    
+   
+     
+ }
+  
+
+ @keyframes mymove {
+    100% {transform: rotate(360deg);}
+  }
+
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+  .clocksize{
+      width: 600px;
+      height:600px ;
+  }
+
+  .city{
+      display: none;
+  }
